@@ -1,0 +1,157 @@
+-----------------------------pagina 2 --------------------------------------
+CREATE TABLE atenciones_sin_venta (
+id int(11) NOT NULL,
+id_atencion,
+fecha_registro,
+id_paciente,
+id_medico,
+id_tipo_precio,
+monto,
+id_examenes,
+id_laboratorio,
+id_negocio,
+id_proyecto
+)
+
+-----------------------------pagina 3 --------------------------------------
+CREATE TABLE atencion (
+id int(11) NOT NULL,
+codigo_atencion varchar(20),
+id_paciente,
+tipo_atención,
+fecha_registro,
+fecha_pactada,
+fecha_publicación,
+estado,
+registro_pago
+monto
+id_sede
+id_negocio,
+id_proyecto
+)
+-----------------------------pagina 4 --------------------------------------
+CREATE TABLE motorizados (
+id int(11) NOT NULL,
+nombre_motorizado,
+fecha,
+id_sede,
+id_tecnico,
+hora_solicitud,
+hora_llegada,
+hora_salida,
+destino,
+transporta,
+comentario, 
+estado,
+acciones
+id_negocio,
+id_proyecto
+)
+
+-----------------------------pagina 5 falta--------------------------------------
+create table desempeño_personal (
+id int(11) NOT NULL,
+fecha,
+proceso,
+indicador,
+valor,
+id_negocio,
+id_proyecto
+)
+
+-----------------------------pagina 6 --------------------------------------
+create table manuales (
+id int(11) NOT NULL,
+cod_manual,
+nombre_documento,
+id_grupo,
+enlace_manual
+id_negocio,
+id_proyecto
+)
+-----------------------------pagina 7 --------------------------------------
+create table formatos (
+id int(11) NOT NULL,
+cod_formato,
+nombre_formato,
+id_grupo,
+enlace_registro
+id_negocio,
+id_proyecto
+)
+-----------------------------pagina 8 --------------------------------------
+SE REPITE CON PAGINA 5
+
+-----------------------------pagina 9 ES DINAMICO--------------------------------------
+
+-----------------------------pagina 10 --------------------------------------
+create table siscovid (
+id int(11) NOT NULL,
+id_atención,
+fecha_envio_siscovid,
+acción
+id_negocio,
+id_proyecto
+)
+-----------------------------pagina 11 ES DINAMICO--------------------------------------
+-----------------------------pagina 12 ES REPETIDO--------------------------------------
+-----------------------------pagina 13 ES REPETIDO--------------------------------------
+-----------------------------pagina 14 ES REPETIDO--------------------------------------
+-----------------------------pagina 15 ES REPETIDO--------------------------------------
+-----------------------------pagina 16 ES REPETIDO--------------------------------------
+
+-----------------------------pagina 17 --------------------------------------
+create table modificaciones_datos_pacientes (
+id int(11) NOT NULL,
+fecha_modificacion,
+sistema,
+modulo,
+datos,
+id_paciente,
+nombre_original,
+apellidos_original,
+email_original,
+sexo_original,
+fecha_nac_original,
+telefono_original,
+id_numero_documento_original
+numero_documento_original,
+id_usuario
+id_negocio,
+id_proyecto
+)
+-----------------------------pagina 18 ES REPETIDO--------------------------------------
+-----------------------------pagina 19 ES REPETIDO--------------------------------------
+
+-----------------------------pagina 20 --------------------------------------
+create table sesiones (
+id int(11) NOT NULL,
+fecha,
+hora,
+id_usuario,
+id_sede,
+direccion_ip,
+dispositivo,
+navegador,
+plataforma,
+estado
+id_negocio,
+id_proyecto
+)
+-----------------------------pagina 21 ES REPETIDO--------------------------------------
+
+-----------------------------pagina 22 --------------------------------------
+create table modificaciones_datos_medicos (
+id int(11) NOT NULL,
+fecha_modificacion,
+sistema,
+cmp,
+id_medico,
+nombre_original,
+email_original,
+sexo_original,
+fecha_nac_original,
+telefono_original,
+id_numero_documento_original,
+numero_documento_original,
+id_usuario)
